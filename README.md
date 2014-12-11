@@ -9,3 +9,4 @@ Dependencies
 
 * SDL 2
 * OpenGL
+* GLEW
