@@ -2,7 +2,7 @@
 projectName = "yasc"
 srcDir = "src"
 buildDir = "build"
-libs = [ "SDL2", "SDL2_image", "GL", "GLEW" ]
+libs = [ "SDL2", "GL", "GLEW" ]
 extraGppOpts = "-Wno-write-strings"
 extraLdOpts = ""
 

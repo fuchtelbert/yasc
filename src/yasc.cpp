@@ -78,7 +78,7 @@ Yasc::Yasc ()
 		glGetShaderiv (glVertShader, GL_INFO_LOG_LENGTH, &glintRes);
 		char *infoLog = (char*)malloc (glintRes);
 		glGetShaderInfoLog (glVertShader, glintRes, &glsizeiRes, infoLog);
-		cerr << "Shader compilation error:" << endl << infoLog << endl;
+		cerr << "Vertex shader compilation error:" << endl << infoLog << endl;
 		exit (EXIT_FAILURE);
 	}
 	
@@ -96,7 +96,8 @@ Yasc::Yasc ()
 		glGetShaderiv (glFragShader, GL_INFO_LOG_LENGTH, &glintRes);
 		char *infoLog = (char*)malloc (glintRes);
 		glGetShaderInfoLog (glFragShader, glintRes, &glsizeiRes, infoLog);
-		cerr << "Shader compilation error:" << endl << infoLog << endl;
+		cerr << "Fragment shader compilation error:" << endl << infoLog
+			<< endl;
 		exit (EXIT_FAILURE);
 	}
 	
