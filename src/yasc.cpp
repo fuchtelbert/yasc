@@ -114,6 +114,8 @@ Yasc::Yasc ()
 		exit (EXIT_FAILURE);
 	}
 	
+	glUseProgram (glShaderProg);
+	
 	// set clear color
 	glClearColor (0, 0, 0, 1);
 	
