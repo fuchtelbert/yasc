@@ -117,6 +117,13 @@ Yasc::Yasc ()
 	
 	glUseProgram (glShaderProg);
 	
+	GLint vertPos = glGetAttribLocation (glShaderProg, "vertPos");
+	
+	// buffer stuff
+	GLuint vertArrayObject;
+	glGenVertexArrays (1, &vertArrayObject);
+	glBindVertexArray (vertArrayObject);
+	
 	// set clear color
 	glClearColor (0, 0, 0, 1);
 	
