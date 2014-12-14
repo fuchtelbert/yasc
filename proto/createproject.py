@@ -10,6 +10,8 @@ buildDir = "build"
 libs = []
 extraGppOpts = ""
 extraLdOpts = ""
+defHeaders = []
+namespaceUsed = "";
 """)
 fs.close ()
 

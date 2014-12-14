@@ -2,7 +2,7 @@
 #ifndef UTILS_H
 #define UTILS_H
 
-char *loadFile (char *fileName);
+char *loadFile (const char *fileName);
 
 #endif /* UTILS_H */
 

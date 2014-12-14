@@ -1,5 +1,5 @@
 
-in vec2 vertPos;
+in ivec2 vertPos;
 
 void main ()
 {

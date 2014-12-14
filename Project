@@ -5,4 +5,6 @@ buildDir = "build"
 libs = [ "SDL2", "GL", "GLEW" ]
 extraGppOpts = "-Wno-write-strings"
 extraLdOpts = ""
+defHeaders = [ "iostream" ]
+namespaceUsed = "std";
 

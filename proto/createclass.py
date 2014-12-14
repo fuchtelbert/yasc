@@ -52,9 +52,16 @@ fs.close ()
 
 # create header file
 
+defHeaderIncludes = "\n".join (
+	"#include <"+inc+">" for i in defHeaders
+)
+
 fs = open (cPath, "w")
 fs.write ("""
+"""+defHeaderIncludes+"""
 #include \""""+include+"""\"
+
+"""+("using namespace "+namespaceUsed+";" if namespaceUsed else "")+"""
 
 """+className+"::"+className+""" ()
 {

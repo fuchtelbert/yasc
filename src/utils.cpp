@@ -6,7 +6,7 @@
 
 using namespace std;
 
-char *loadFile (char *fileName)
+char *loadFile (const char *fileName)
 {
 	FILE *fs;
 	long len;
